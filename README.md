@@ -61,3 +61,20 @@ cd /
 ls
 
 env
+
+
+------Docker example------
+
+docker network ls
+
+docker network create mongo-network
+
+docker run -p 27017:27017 -d -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password --name mongodb --net mongo-network mongo
+
+docker logs 8dc1c3b25526ccc251775ddff7976421a85dc9a2891479944258260b152df206
+
+docker run -d -p 8081:8081 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG_MONGODB_ADMINPASSWORD=password --net mongo-network --name mongo-express -e E_CONFIG_MONGODB_SERVER=mongodb    mongo-express 
+
+
+docker logs c176b2bf3bbad0099b2cdf37ee7b8252797d5ff10c6d6953add1d54b39c6025c
+
