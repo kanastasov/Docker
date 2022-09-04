@@ -22,3 +22,19 @@ docker run redis:4.0 => pulls image and starts container
 docker run -p6000:6379 redis => bind the port of 6379 to 6000
 
 docker run -p6001:6379 -d redis:4.0
+
+
+docker pull => pull the image from repo local
+
+docker run combines docker pull and docker start
+
+docker start/stop restart container
+
+docker run -d  => run the container detached mode => -p6000:6379 bind the port of the host to the container
+
+docker ps -a all the containers
+
+docker images => all the images locally
+
+
+Docker commands for troubleshootin
