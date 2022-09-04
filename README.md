@@ -38,3 +38,26 @@ docker images => all the images locally
 
 
 Docker commands for troubleshootin
+
+docker logs 551adaea66d6(cotainer id)
+
+docker logs objective_margulis(cotainer name)
+
+docker run -d -p6001:6379 --name redis-older redis:4.0
+
+docker run -d -P --name redis-older redis:4.0
+
+docker run -d -P --name redis-latest redis
+
+docker logs redis-older
+
+
+docker exec -it 40d26f4e1b07(container id) /bin/bash
+
+ls / pwd 
+
+cd /
+
+ls
+
+env
