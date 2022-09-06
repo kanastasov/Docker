@@ -83,5 +83,11 @@ Docker compose
 
 docker-compose -f docker-mongo.yaml up
 
+https://jsonformatter.org/yaml-formatter
+
+When we restart the container everything that we configure is gone like db and data this could be overturned with docker volumes for persistence
+
+docker-compose -f docker-mongo.yaml down removes the containers and the network
+
 
 
